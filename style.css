@@ -1,0 +1,68 @@
+/*.buttons {
+  position: fixed;
+  bottom: 3vw;
+  left: 3vw;
+}*/
+body {
+  background-color: #9d9e9f;
+  font-family: "Nunito", sans-serif;
+}
+.pictureR {
+  width: 50%;
+  height: 50%;
+
+  grid-area: p;
+}
+#ingredient-input {
+  grid-area: i;
+  padding: 10px;
+  font-size: 1.5vw;
+  grid-area: i;
+}
+
+.container {
+  /*display: grid;
+  grid-gap: 20px;
+  padding-left: 25px;
+  padding-right: 25px;*/
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 3fr 2fr;
+  grid-template-areas:
+    "i i"
+    "R R";
+  height: 100vh;
+  display: grid;
+}
+#titleR {
+  grid-area: t;
+}
+#ingredientsR {
+  grid-area: s;
+}
+#ingredientR {
+  grid-area: z;
+}
+.AllRecipes {
+  padding-right: 25px;
+}
+*/ .Recipes {
+  grid-area: R;
+  background-color: #e8c759;
+  font-family: "Nunito", sans-serif;
+  width: 500px;
+  height: 500px;
+  box-shadow: 1px 1px 5px #2c3e50;
+  font-size: 2.5vw;
+  display: flex;
+  box-shadow: 1px 1px 5px #2c3e50;
+  padding: 10px;
+  /* grid-template-columns: 1fr 4fr;
+  grid-template-rows: 4fr 1fr;
+  grid-template-areas:
+    "t t t t"
+    "p p p p"
+    "s s s s"
+    "s s s s";*/
+}
